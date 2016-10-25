@@ -114,55 +114,6 @@ namespace Control_panel_application_1
 
         }
 
-        private void button2_Click(object sender, EventArgs e) //Command for send the gui  the Encoder values
-        {
-            serialPort1.DiscardOutBuffer(); //clear the TX line
-            serialPrint("R"); //R
-            if (debug)
-            {
-                textBox13.Text = serialPort1.ReadLine();
-            }
-        }
-
-        private void button3_Click(object sender, EventArgs e)  //Will Reset Encoder
-        {
-            serialPort1.DiscardOutBuffer(); //clear the TX line
-            serialPrint("I"); //I
-            if (debug)
-            {
-                textBox13.Text = serialPort1.ReadLine();
-            }
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label26_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox5_Enter(object sender, EventArgs e)
-        {
-
-        }
-        private void label25_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             getAvailablePorts();
@@ -180,7 +131,7 @@ namespace Control_panel_application_1
             {
                 if (comboBox1.Text == "")
                 {
-                    textBox13.Text = "Select correct ComPort and BaudRate!";
+                    mainTextBox.Text = "Select correct ComPort and BaudRate!";
 
                 }
                 else if (comboBox2.Text == "")
@@ -209,7 +160,7 @@ namespace Control_panel_application_1
                         button14.Enabled = true;
                         button15.Enabled = true;
                         button1.Text = "Disconnect";
-                        textBox13.Text = "";
+                        mainTextBox.Text = "";
                         serialPort1.NewLine = "\n";
                     }
                     else
@@ -220,7 +171,7 @@ namespace Control_panel_application_1
             }
             catch (UnauthorizedAccessException)
             {
-                textBox13.Text = "Unauthorized Access Exception";
+                mainTextBox.Text = "Unauthorized Access Exception";
             }
         }
 
@@ -230,7 +181,7 @@ namespace Control_panel_application_1
             serialPrint("M,"+"H," + Convert.ToString(numericUpDown1.Value) + "," + Convert.ToString(numericUpDown2.Value) + "," + Convert.ToString(numericUpDown3.Value) + ",1");  //H,kp,ki,kd,1/2
             if (debug)
             {
-                textBox13.Text = serialPort1.ReadLine();
+                mainTextBox.Text = serialPort1.ReadLine();
             }
         }
 
@@ -240,65 +191,7 @@ namespace Control_panel_application_1
             serialPrint("M,"+"H," + Convert.ToString(numericUpDown6.Value) + "," + Convert.ToString(numericUpDown5.Value) + "," + Convert.ToString(numericUpDown4.Value) + ",2");  //H,kp,ki,kd,1/2
             if (debug)
             {
-                textBox13.Text = serialPort1.ReadLine();
-            }
-        }
-
-        /*
-        private void button5_Click(object sender, EventArgs e)          // Left motor max and min speed
-        {
-            serialPort1.DiscardOutBuffer(); //clear the TX line
-            serialPrint("M," + Convert.ToString(vScrollBar1.Value) + "," + Convert.ToString(vScrollBar2.Value) + ",1"); //M,Max,Min,1/2
-            if (debug)
-            {
-                textBox13.Text = serialPort1.ReadLine();
-            }
-        }
-        private void button11_Click(object sender, EventArgs e)         // Right motor max and min speed
-        {
-            serialPort1.DiscardOutBuffer(); //clear the TX line
-            serialPrint("M," + Convert.ToString(vScrollBar4.Value) + "," + Convert.ToString(vScrollBar3.Value) + ",2"); //M,Max,Min,1/2
-            if (debug)
-            {
-                textBox13.Text = serialPort1.ReadLine();
-            }
-        }
-        
-        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e) //      
-        {
-            textBox4.Text=Convert.ToString(vScrollBar1.Value);
-        }   
-        private void vScrollBar2_Scroll(object sender, ScrollEventArgs e)
-        {
-            textBox3.Text = Convert.ToString(vScrollBar2.Value);
-        }
-        private void vScrollBar4_Scroll(object sender, ScrollEventArgs e)
-        {
-            textBox6.Text = Convert.ToString(vScrollBar4.Value);
-        }
-
-        private void vScrollBar3_Scroll(object sender, ScrollEventArgs e)
-        {
-            textBox5.Text = Convert.ToString(vScrollBar3.Value);
-        }
-        */
-        private void button8_Click(object sender, EventArgs e)  //command for slave to send the encoder reading
-        {
-            serialPort1.DiscardOutBuffer(); //clear the TX line
-            serialPrint("S,1"); //S,1/2
-            if (debug)
-            {
-                textBox13.Text = serialPort1.ReadLine();
-            }
-        }
-
-        private void button9_Click(object sender, EventArgs e)//command for slave to send the encoder reading
-        {
-            serialPort1.DiscardOutBuffer(); //clear the TX line
-            serialPrint("S,2"); //S,1/2
-            if (debug)
-            {
-                textBox13.Text = serialPort1.ReadLine();
+                mainTextBox.Text = serialPort1.ReadLine();
             }
         }
 
@@ -308,7 +201,7 @@ namespace Control_panel_application_1
             serialPrint("M,"+"L," + Convert.ToString(vScrollBar8.Value) + "," + Convert.ToString(vScrollBar7.Value)); //L,Left Right Motor
             if (debug)
             {
-                textBox13.Text = serialPort1.ReadLine();
+                mainTextBox.Text = serialPort1.ReadLine();
             }
         }
 
@@ -318,7 +211,7 @@ namespace Control_panel_application_1
             serialPrint("M,"+"D," + Convert.ToString(vScrollBar6.Value) + "," + Convert.ToString(vScrollBar5.Value)); //D,Left Right Motor
             if (debug)
             {
-                textBox13.Text = serialPort1.ReadLine();
+                mainTextBox.Text = serialPort1.ReadLine();
             }
         }
 
@@ -343,15 +236,15 @@ namespace Control_panel_application_1
         }
         private void serialPrint(String text)
         {
-            textBox13.AppendText(">>" + text + "\n");
+            mainTextBox.AppendText(">>" + text + "\n");
             serialPort1.WriteLine(text);
         }
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             String dataRead = serialPort1.ReadLine();
-            textBox13.Invoke(new EventHandler(delegate
+            mainTextBox.Invoke(new EventHandler(delegate
             {
-                textBox13.AppendText("--" + dataRead + "\n");
+                mainTextBox.AppendText("--" + dataRead + "\n");
             }));
             int a, b, c, d;
             String s1 = "", s2 = "", s3 = "", s4 = "";
@@ -404,9 +297,9 @@ namespace Control_panel_application_1
                 if (dataRead.Length > 4)
                 {
                     //string[] inputSplit = dataRead.Split(',');
-                    textBox1.Text = dataRead[2].ToString();
-                    textBox2.Text = dataRead[4].ToString();
-                    //textBox13.Text = dataRead;
+                    //textBox1.Text = dataRead[2].ToString();
+                    //textBox2.Text = dataRead[4].ToString();
+                    mainTextBox.Text = dataRead;
                 }
             }
 
@@ -643,7 +536,7 @@ namespace Control_panel_application_1
         private void local_btn_Click(object sender, EventArgs e)
         {
             serialPort1.DiscardOutBuffer();
-            if (serialPort1.IsOpen) serialPort1.Write("S\n");
+            if (serialPort1.IsOpen) serialPrint("SONAR," + "L");
         }
 
         private void path_btn_Click(object sender, EventArgs e)
@@ -871,13 +764,19 @@ namespace Control_panel_application_1
 
             }
             catch(Exception ae){
-                textBox13.Text = "Error while Path Planning";
+                mainTextBox.Text = "Error while Path Planning";
             }
         }
 
         private void textBox12_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void readSonar_btn_Click(object sender, EventArgs e)
+        {
+            serialPort1.DiscardOutBuffer();
+            serialPrint("SONAR,"+"D,");
         }
     }
 }

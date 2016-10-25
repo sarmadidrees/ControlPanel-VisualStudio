@@ -80,8 +80,9 @@
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.button17 = new System.Windows.Forms.Button();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.mainTextBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
             this.scatterGraph1 = new NationalInstruments.UI.WindowsForms.ScatterGraph();
             this.scatterPlot1 = new NationalInstruments.UI.ScatterPlot();
             this.xAxis1 = new NationalInstruments.UI.XAxis();
@@ -100,7 +101,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.readSonar_btn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
@@ -239,7 +240,7 @@
             this.button9.TabIndex = 25;
             this.button9.Text = "Read";
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+//            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -259,7 +260,7 @@
             this.button8.TabIndex = 23;
             this.button8.Text = "Read";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+          //  this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -468,7 +469,7 @@
             this.label25.Size = new System.Drawing.Size(111, 17);
             this.label25.TabIndex = 8;
             this.label25.Text = "Driving Modes";
-            this.label25.Click += new System.EventHandler(this.label25_Click);
+       //     this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // groupBox8
             // 
@@ -505,7 +506,7 @@
             this.label26.Size = new System.Drawing.Size(84, 17);
             this.label26.TabIndex = 10;
             this.label26.Text = "cm/s Drive";
-            this.label26.Click += new System.EventHandler(this.label26_Click);
+          //  this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // vScrollBar5
             // 
@@ -671,20 +672,21 @@
             // 
             this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort1_DataReceived);
             // 
-            // textBox13
+            // mainTextBox
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(0, 254);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(222, 137);
-            this.textBox13.TabIndex = 12;
+            this.mainTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainTextBox.Location = new System.Drawing.Point(0, 254);
+            this.mainTextBox.Multiline = true;
+            this.mainTextBox.Name = "mainTextBox";
+            this.mainTextBox.Size = new System.Drawing.Size(222, 137);
+            this.mainTextBox.TabIndex = 12;
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.groupBox2.Controls.Add(this.readSonar_btn);
             this.groupBox2.Controls.Add(this.textBox12);
-            this.groupBox2.Controls.Add(this.textBox13);
+            this.groupBox2.Controls.Add(this.mainTextBox);
             this.groupBox2.Controls.Add(this.scatterGraph1);
             this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.Controls.Add(this.groupBox3);
@@ -693,6 +695,17 @@
             this.groupBox2.Size = new System.Drawing.Size(562, 606);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(232, 573);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
+            this.textBox12.Size = new System.Drawing.Size(50, 20);
+            this.textBox12.TabIndex = 11;
+            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
+            this.textBox12.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.textBox12.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             // 
             // scatterGraph1
             // 
@@ -882,16 +895,15 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Current Location";
             // 
-            // textBox12
+            // readSonar_btn
             // 
-            this.textBox12.Location = new System.Drawing.Point(232, 573);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(50, 20);
-            this.textBox12.TabIndex = 11;
-            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
-            this.textBox12.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.textBox12.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            this.readSonar_btn.Location = new System.Drawing.Point(304, 573);
+            this.readSonar_btn.Name = "readSonar_btn";
+            this.readSonar_btn.Size = new System.Drawing.Size(75, 23);
+            this.readSonar_btn.TabIndex = 10;
+            this.readSonar_btn.Text = "ReadSonar";
+            this.readSonar_btn.UseVisualStyleBackColor = true;
+            this.readSonar_btn.Click += new System.EventHandler(this.readSonar_btn_Click);
             // 
             // Form1
             // 
@@ -991,7 +1003,7 @@
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Button button17;
         private System.IO.Ports.SerialPort serialPort1;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox mainTextBox;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
@@ -1012,6 +1024,7 @@
         private NationalInstruments.UI.XAxis xAxis1;
         private NationalInstruments.UI.YAxis yAxis1;
         private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Button readSonar_btn;
     }
 }
 
