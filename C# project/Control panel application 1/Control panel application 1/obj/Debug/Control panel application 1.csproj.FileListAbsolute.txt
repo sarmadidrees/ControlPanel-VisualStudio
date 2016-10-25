@@ -1,0 +1,38 @@
+F:\IMR\musafir gui\Musafir Control Pannel\Control panel application 1\Control panel application 1\bin\Debug\Control panel application 1.exe.config
+F:\IMR\musafir gui\Musafir Control Pannel\Control panel application 1\Control panel application 1\bin\Debug\Control panel application 1.exe
+F:\IMR\musafir gui\Musafir Control Pannel\Control panel application 1\Control panel application 1\bin\Debug\Control panel application 1.pdb
+F:\IMR\musafir gui\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.csprojResolveAssemblyReference.cache
+F:\IMR\musafir gui\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control_panel_application_1.Form1.resources
+F:\IMR\musafir gui\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control_panel_application_1.Properties.Resources.resources
+F:\IMR\musafir gui\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.csproj.GenerateResource.Cache
+F:\IMR\musafir gui\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.exe
+F:\IMR\musafir gui\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.pdb
+C:\Users\maazm\Documents\GitHub\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\bin\Debug\Control panel application 1.exe.config
+C:\Users\maazm\Documents\GitHub\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\bin\Debug\Control panel application 1.exe
+C:\Users\maazm\Documents\GitHub\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\bin\Debug\Control panel application 1.pdb
+C:\Users\maazm\Documents\GitHub\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control_panel_application_1.Form1.resources
+C:\Users\maazm\Documents\GitHub\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control_panel_application_1.Properties.Resources.resources
+C:\Users\maazm\Documents\GitHub\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.csproj.GenerateResource.Cache
+C:\Users\maazm\Documents\GitHub\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.exe
+C:\Users\maazm\Documents\GitHub\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.pdb
+C:\Users\maazm\Documents\GitHub\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.csprojResolveAssemblyReference.cache
+D:\Dropbox\Visual Studio 2015\Projects\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\bin\Debug\Control panel application 1.exe.config
+D:\Dropbox\Visual Studio 2015\Projects\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.exe
+D:\Dropbox\Visual Studio 2015\Projects\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.pdb
+D:\Dropbox\Visual Studio 2015\Projects\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\bin\Debug\Control panel application 1.exe
+D:\Dropbox\Visual Studio 2015\Projects\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\bin\Debug\Control panel application 1.pdb
+D:\Dropbox\Visual Studio 2015\Projects\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.csprojResolveAssemblyReference.cache
+D:\Dropbox\Visual Studio 2015\Projects\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control_panel_application_1.Form1.resources
+D:\Dropbox\Visual Studio 2015\Projects\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control_panel_application_1.Properties.Resources.resources
+D:\Dropbox\Visual Studio 2015\Projects\Musafir-Desktop-Control-Panel\Musafir Control Pannel\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.csproj.GenerateResource.Cache
+C:\Users\Sarmad Idrees\Desktop\New folder\C# project\Control panel application 1\Control panel application 1\bin\Debug\Control panel application 1.exe.config
+C:\Users\Sarmad Idrees\Desktop\New folder\C# project\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.exe
+C:\Users\Sarmad Idrees\Desktop\New folder\C# project\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.pdb
+C:\Users\Sarmad Idrees\Desktop\New folder\C# project\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.csprojResolveAssemblyReference.cache
+C:\Users\Sarmad Idrees\Desktop\New folder\C# project\Control panel application 1\Control panel application 1\obj\Debug\Control_panel_application_1.Form1.resources
+C:\Users\Sarmad Idrees\Desktop\New folder\C# project\Control panel application 1\Control panel application 1\obj\Debug\Control_panel_application_1.Properties.Resources.resources
+C:\Users\Sarmad Idrees\Desktop\New folder\C# project\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.csproj.GenerateResource.Cache
+C:\Users\Sarmad Idrees\Desktop\New folder\C# project\Control panel application 1\Control panel application 1\bin\Debug\Control panel application 1.exe
+C:\Users\Sarmad Idrees\Desktop\New folder\C# project\Control panel application 1\Control panel application 1\bin\Debug\Control panel application 1.pdb
+C:\Users\Sarmad Idrees\Desktop\New folder\C# project\Control panel application 1\Control panel application 1\bin\Debug\NationalInstruments.UI.Styles3D.dll
+C:\Users\Sarmad Idrees\Desktop\New folder\C# project\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.exe.licenses
