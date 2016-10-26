@@ -39,3 +39,11 @@ C:\Users\Sarmad Idrees\Desktop\New folder\C# project\Control panel application 1
 C:\Users\Sarmad Idrees\Documents\GitHub\ControlPanel-VisualStudio\C# project\Control panel application 1\Control panel application 1\bin\Debug\Control panel application 1.exe.config
 C:\Users\Sarmad Idrees\Documents\GitHub\ControlPanel-VisualStudio\C# project\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.exe
 C:\Users\Sarmad Idrees\Documents\GitHub\ControlPanel-VisualStudio\C# project\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.pdb
+C:\Users\Sarmad Idrees\Documents\GitHub\ControlPanel-VisualStudio\C# project\Control panel application 1\Control panel application 1\bin\Debug\Control panel application 1.exe
+C:\Users\Sarmad Idrees\Documents\GitHub\ControlPanel-VisualStudio\C# project\Control panel application 1\Control panel application 1\bin\Debug\Control panel application 1.pdb
+C:\Users\Sarmad Idrees\Documents\GitHub\ControlPanel-VisualStudio\C# project\Control panel application 1\Control panel application 1\bin\Debug\NationalInstruments.UI.Styles3D.dll
+C:\Users\Sarmad Idrees\Documents\GitHub\ControlPanel-VisualStudio\C# project\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.csprojResolveAssemblyReference.cache
+C:\Users\Sarmad Idrees\Documents\GitHub\ControlPanel-VisualStudio\C# project\Control panel application 1\Control panel application 1\obj\Debug\Control_panel_application_1.Form1.resources
+C:\Users\Sarmad Idrees\Documents\GitHub\ControlPanel-VisualStudio\C# project\Control panel application 1\Control panel application 1\obj\Debug\Control_panel_application_1.Properties.Resources.resources
+C:\Users\Sarmad Idrees\Documents\GitHub\ControlPanel-VisualStudio\C# project\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.csproj.GenerateResource.Cache
+C:\Users\Sarmad Idrees\Documents\GitHub\ControlPanel-VisualStudio\C# project\Control panel application 1\Control panel application 1\obj\Debug\Control panel application 1.exe.licenses

@@ -39,10 +39,18 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.pidRotate_Apply_btn = new System.Windows.Forms.Button();
+            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.resetEnc_btn = new System.Windows.Forms.Button();
+            this.pidR_Apply_btn = new System.Windows.Forms.Button();
+            this.readEnc_btn = new System.Windows.Forms.Button();
+            this.pidL_Apply_btn = new System.Windows.Forms.Button();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
@@ -82,6 +90,7 @@
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.mainTextBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.readSonar_btn = new System.Windows.Forms.Button();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.scatterGraph1 = new NationalInstruments.UI.WindowsForms.ScatterGraph();
             this.scatterPlot1 = new NationalInstruments.UI.ScatterPlot();
@@ -101,9 +110,13 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.readSonar_btn = new System.Windows.Forms.Button();
+            this.RotateRight_btn = new System.Windows.Forms.Button();
+            this.RotateLeft_btn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
@@ -207,10 +220,18 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.button9);
-            this.groupBox6.Controls.Add(this.button10);
-            this.groupBox6.Controls.Add(this.button8);
-            this.groupBox6.Controls.Add(this.button7);
+            this.groupBox6.Controls.Add(this.pidRotate_Apply_btn);
+            this.groupBox6.Controls.Add(this.numericUpDown7);
+            this.groupBox6.Controls.Add(this.numericUpDown8);
+            this.groupBox6.Controls.Add(this.numericUpDown9);
+            this.groupBox6.Controls.Add(this.label10);
+            this.groupBox6.Controls.Add(this.label11);
+            this.groupBox6.Controls.Add(this.label13);
+            this.groupBox6.Controls.Add(this.label14);
+            this.groupBox6.Controls.Add(this.resetEnc_btn);
+            this.groupBox6.Controls.Add(this.pidR_Apply_btn);
+            this.groupBox6.Controls.Add(this.readEnc_btn);
+            this.groupBox6.Controls.Add(this.pidL_Apply_btn);
             this.groupBox6.Controls.Add(this.numericUpDown4);
             this.groupBox6.Controls.Add(this.numericUpDown5);
             this.groupBox6.Controls.Add(this.numericUpDown6);
@@ -232,45 +253,138 @@
             this.groupBox6.TabIndex = 5;
             this.groupBox6.TabStop = false;
             // 
-            // button9
+            // pidRotate_Apply_btn
             // 
-            this.button9.Location = new System.Drawing.Point(150, 167);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 25;
-            this.button9.Text = "Read";
-            this.button9.UseVisualStyleBackColor = true;
-//            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.pidRotate_Apply_btn.Location = new System.Drawing.Point(163, 168);
+            this.pidRotate_Apply_btn.Name = "pidRotate_Apply_btn";
+            this.pidRotate_Apply_btn.Size = new System.Drawing.Size(75, 23);
+            this.pidRotate_Apply_btn.TabIndex = 33;
+            this.pidRotate_Apply_btn.Text = "Apply";
+            this.pidRotate_Apply_btn.UseVisualStyleBackColor = true;
+            this.pidRotate_Apply_btn.Click += new System.EventHandler(this.pidRotate_Apply_btn_Click);
             // 
-            // button10
+            // numericUpDown7
             // 
-            this.button10.Location = new System.Drawing.Point(150, 195);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 24;
-            this.button10.Text = "Apply";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.numericUpDown7.DecimalPlaces = 1;
+            this.numericUpDown7.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.numericUpDown7.Location = new System.Drawing.Point(186, 142);
+            this.numericUpDown7.Name = "numericUpDown7";
+            this.numericUpDown7.Size = new System.Drawing.Size(41, 20);
+            this.numericUpDown7.TabIndex = 32;
             // 
-            // button8
+            // numericUpDown8
             // 
-            this.button8.Location = new System.Drawing.Point(19, 167);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 23;
-            this.button8.Text = "Read";
-            this.button8.UseVisualStyleBackColor = true;
-          //  this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.numericUpDown8.DecimalPlaces = 1;
+            this.numericUpDown8.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.numericUpDown8.Location = new System.Drawing.Point(186, 103);
+            this.numericUpDown8.Name = "numericUpDown8";
+            this.numericUpDown8.Size = new System.Drawing.Size(41, 20);
+            this.numericUpDown8.TabIndex = 31;
             // 
-            // button7
+            // numericUpDown9
             // 
-            this.button7.Location = new System.Drawing.Point(19, 195);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 10;
-            this.button7.Text = "Apply";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.numericUpDown9.DecimalPlaces = 1;
+            this.numericUpDown9.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.numericUpDown9.Location = new System.Drawing.Point(186, 62);
+            this.numericUpDown9.Name = "numericUpDown9";
+            this.numericUpDown9.Size = new System.Drawing.Size(41, 20);
+            this.numericUpDown9.TabIndex = 30;
+            this.numericUpDown9.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(165, 105);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(18, 13);
+            this.label10.TabIndex = 29;
+            this.label10.Text = "Ki";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(165, 144);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(22, 13);
+            this.label11.TabIndex = 28;
+            this.label11.Text = "Kd";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(165, 62);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(22, 13);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "Kp";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(162, 42);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(76, 13);
+            this.label14.TabIndex = 26;
+            this.label14.Text = "FOR ROTATE";
+            // 
+            // resetEnc_btn
+            // 
+            this.resetEnc_btn.Location = new System.Drawing.Point(120, 195);
+            this.resetEnc_btn.Name = "resetEnc_btn";
+            this.resetEnc_btn.Size = new System.Drawing.Size(90, 23);
+            this.resetEnc_btn.TabIndex = 25;
+            this.resetEnc_btn.Text = "ResetEncoder";
+            this.resetEnc_btn.UseVisualStyleBackColor = true;
+            this.resetEnc_btn.Click += new System.EventHandler(this.resetEnc_btn_Click);
+            // 
+            // pidR_Apply_btn
+            // 
+            this.pidR_Apply_btn.Location = new System.Drawing.Point(80, 167);
+            this.pidR_Apply_btn.Name = "pidR_Apply_btn";
+            this.pidR_Apply_btn.Size = new System.Drawing.Size(75, 23);
+            this.pidR_Apply_btn.TabIndex = 24;
+            this.pidR_Apply_btn.Text = "Apply";
+            this.pidR_Apply_btn.UseVisualStyleBackColor = true;
+            this.pidR_Apply_btn.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // readEnc_btn
+            // 
+            this.readEnc_btn.Location = new System.Drawing.Point(18, 195);
+            this.readEnc_btn.Name = "readEnc_btn";
+            this.readEnc_btn.Size = new System.Drawing.Size(83, 23);
+            this.readEnc_btn.TabIndex = 23;
+            this.readEnc_btn.Text = "ReadEncoder";
+            this.readEnc_btn.UseVisualStyleBackColor = true;
+            this.readEnc_btn.Click += new System.EventHandler(this.readEnc_L_Click);
+            // 
+            // pidL_Apply_btn
+            // 
+            this.pidL_Apply_btn.Location = new System.Drawing.Point(-3, 167);
+            this.pidL_Apply_btn.Name = "pidL_Apply_btn";
+            this.pidL_Apply_btn.Size = new System.Drawing.Size(75, 23);
+            this.pidL_Apply_btn.TabIndex = 10;
+            this.pidL_Apply_btn.Text = "Apply";
+            this.pidL_Apply_btn.UseVisualStyleBackColor = true;
+            this.pidL_Apply_btn.Click += new System.EventHandler(this.button7_Click);
             // 
             // numericUpDown4
             // 
@@ -280,7 +394,7 @@
             0,
             0,
             65536});
-            this.numericUpDown4.Location = new System.Drawing.Point(168, 141);
+            this.numericUpDown4.Location = new System.Drawing.Point(104, 141);
             this.numericUpDown4.Name = "numericUpDown4";
             this.numericUpDown4.Size = new System.Drawing.Size(41, 20);
             this.numericUpDown4.TabIndex = 22;
@@ -293,7 +407,7 @@
             0,
             0,
             65536});
-            this.numericUpDown5.Location = new System.Drawing.Point(168, 102);
+            this.numericUpDown5.Location = new System.Drawing.Point(104, 102);
             this.numericUpDown5.Name = "numericUpDown5";
             this.numericUpDown5.Size = new System.Drawing.Size(41, 20);
             this.numericUpDown5.TabIndex = 21;
@@ -306,7 +420,7 @@
             0,
             0,
             65536});
-            this.numericUpDown6.Location = new System.Drawing.Point(168, 61);
+            this.numericUpDown6.Location = new System.Drawing.Point(104, 61);
             this.numericUpDown6.Name = "numericUpDown6";
             this.numericUpDown6.Size = new System.Drawing.Size(41, 20);
             this.numericUpDown6.TabIndex = 20;
@@ -320,7 +434,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(147, 104);
+            this.label22.Location = new System.Drawing.Point(83, 104);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(18, 13);
             this.label22.TabIndex = 19;
@@ -330,7 +444,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(147, 143);
+            this.label23.Location = new System.Drawing.Point(83, 143);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(22, 13);
             this.label23.TabIndex = 18;
@@ -340,7 +454,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(147, 61);
+            this.label24.Location = new System.Drawing.Point(83, 61);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(22, 13);
             this.label24.TabIndex = 17;
@@ -354,7 +468,7 @@
             0,
             0,
             65536});
-            this.numericUpDown3.Location = new System.Drawing.Point(40, 141);
+            this.numericUpDown3.Location = new System.Drawing.Point(23, 141);
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(41, 20);
             this.numericUpDown3.TabIndex = 16;
@@ -367,7 +481,7 @@
             0,
             0,
             65536});
-            this.numericUpDown2.Location = new System.Drawing.Point(40, 102);
+            this.numericUpDown2.Location = new System.Drawing.Point(23, 102);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(41, 20);
             this.numericUpDown2.TabIndex = 15;
@@ -380,7 +494,7 @@
             0,
             0,
             65536});
-            this.numericUpDown1.Location = new System.Drawing.Point(40, 61);
+            this.numericUpDown1.Location = new System.Drawing.Point(23, 61);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(41, 20);
             this.numericUpDown1.TabIndex = 14;
@@ -395,7 +509,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(19, 104);
+            this.label21.Location = new System.Drawing.Point(2, 104);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(18, 13);
             this.label21.TabIndex = 13;
@@ -405,7 +519,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(19, 143);
+            this.label20.Location = new System.Drawing.Point(2, 143);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(22, 13);
             this.label20.TabIndex = 12;
@@ -415,7 +529,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(19, 61);
+            this.label19.Location = new System.Drawing.Point(2, 61);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(22, 13);
             this.label19.TabIndex = 11;
@@ -424,7 +538,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(147, 34);
+            this.label18.Location = new System.Drawing.Point(85, 41);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(62, 13);
             this.label18.TabIndex = 10;
@@ -433,7 +547,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(19, 34);
+            this.label17.Location = new System.Drawing.Point(7, 41);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(55, 13);
             this.label17.TabIndex = 10;
@@ -443,7 +557,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(48, 12);
+            this.label16.Location = new System.Drawing.Point(31, 12);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(146, 17);
             this.label16.TabIndex = 9;
@@ -469,7 +583,6 @@
             this.label25.Size = new System.Drawing.Size(111, 17);
             this.label25.TabIndex = 8;
             this.label25.Text = "Driving Modes";
-       //     this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // groupBox8
             // 
@@ -506,7 +619,6 @@
             this.label26.Size = new System.Drawing.Size(84, 17);
             this.label26.TabIndex = 10;
             this.label26.Text = "cm/s Drive";
-          //  this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // vScrollBar5
             // 
@@ -660,7 +772,7 @@
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(756, 618);
+            this.button17.Location = new System.Drawing.Point(756, 612);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(75, 23);
             this.button17.TabIndex = 11;
@@ -684,6 +796,8 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.groupBox2.Controls.Add(this.RotateLeft_btn);
+            this.groupBox2.Controls.Add(this.RotateRight_btn);
             this.groupBox2.Controls.Add(this.readSonar_btn);
             this.groupBox2.Controls.Add(this.textBox12);
             this.groupBox2.Controls.Add(this.mainTextBox);
@@ -696,14 +810,23 @@
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             // 
+            // readSonar_btn
+            // 
+            this.readSonar_btn.Location = new System.Drawing.Point(272, 572);
+            this.readSonar_btn.Name = "readSonar_btn";
+            this.readSonar_btn.Size = new System.Drawing.Size(75, 23);
+            this.readSonar_btn.TabIndex = 10;
+            this.readSonar_btn.Text = "ReadSonar";
+            this.readSonar_btn.UseVisualStyleBackColor = true;
+            this.readSonar_btn.Click += new System.EventHandler(this.readSonar_btn_Click);
+            // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(232, 573);
+            this.textBox12.Location = new System.Drawing.Point(212, 573);
             this.textBox12.Name = "textBox12";
             this.textBox12.ReadOnly = true;
             this.textBox12.Size = new System.Drawing.Size(50, 20);
             this.textBox12.TabIndex = 11;
-            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             this.textBox12.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.textBox12.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             // 
@@ -895,15 +1018,25 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Current Location";
             // 
-            // readSonar_btn
+            // RotateRight_btn
             // 
-            this.readSonar_btn.Location = new System.Drawing.Point(304, 573);
-            this.readSonar_btn.Name = "readSonar_btn";
-            this.readSonar_btn.Size = new System.Drawing.Size(75, 23);
-            this.readSonar_btn.TabIndex = 10;
-            this.readSonar_btn.Text = "ReadSonar";
-            this.readSonar_btn.UseVisualStyleBackColor = true;
-            this.readSonar_btn.Click += new System.EventHandler(this.readSonar_btn_Click);
+            this.RotateRight_btn.Location = new System.Drawing.Point(354, 571);
+            this.RotateRight_btn.Name = "RotateRight_btn";
+            this.RotateRight_btn.Size = new System.Drawing.Size(53, 23);
+            this.RotateRight_btn.TabIndex = 32;
+            this.RotateRight_btn.Text = "R_R";
+            this.RotateRight_btn.UseVisualStyleBackColor = true;
+            this.RotateRight_btn.Click += new System.EventHandler(this.RotateRight_btn_Click);
+            // 
+            // RotateLeft_btn
+            // 
+            this.RotateLeft_btn.Location = new System.Drawing.Point(413, 572);
+            this.RotateLeft_btn.Name = "RotateLeft_btn";
+            this.RotateLeft_btn.Size = new System.Drawing.Size(53, 23);
+            this.RotateLeft_btn.TabIndex = 33;
+            this.RotateLeft_btn.Text = "R_L";
+            this.RotateLeft_btn.UseVisualStyleBackColor = true;
+            this.RotateLeft_btn.Click += new System.EventHandler(this.RotateLeft_btn_Click);
             // 
             // Form1
             // 
@@ -927,6 +1060,9 @@
             this.groupBox1.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
@@ -962,10 +1098,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button resetEnc_btn;
+        private System.Windows.Forms.Button pidR_Apply_btn;
+        private System.Windows.Forms.Button readEnc_btn;
+        private System.Windows.Forms.Button pidL_Apply_btn;
         private System.Windows.Forms.NumericUpDown numericUpDown4;
         private System.Windows.Forms.NumericUpDown numericUpDown5;
         private System.Windows.Forms.NumericUpDown numericUpDown6;
@@ -1025,6 +1161,16 @@
         private NationalInstruments.UI.YAxis yAxis1;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Button readSonar_btn;
+        private System.Windows.Forms.Button pidRotate_Apply_btn;
+        private System.Windows.Forms.NumericUpDown numericUpDown7;
+        private System.Windows.Forms.NumericUpDown numericUpDown8;
+        private System.Windows.Forms.NumericUpDown numericUpDown9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button RotateLeft_btn;
+        private System.Windows.Forms.Button RotateRight_btn;
     }
 }
 
