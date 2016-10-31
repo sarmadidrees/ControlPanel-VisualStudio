@@ -90,6 +90,8 @@
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.mainTextBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.RotateLeft_btn = new System.Windows.Forms.Button();
+            this.RotateRight_btn = new System.Windows.Forms.Button();
             this.readSonar_btn = new System.Windows.Forms.Button();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.scatterGraph1 = new NationalInstruments.UI.WindowsForms.ScatterGraph();
@@ -110,8 +112,28 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.RotateRight_btn = new System.Windows.Forms.Button();
-            this.RotateLeft_btn = new System.Windows.Forms.Button();
+            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
+            this.hScrollBar2 = new System.Windows.Forms.HScrollBar();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBoxRL = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.hScrollBar3 = new System.Windows.Forms.HScrollBar();
+            this.hScrollBar4 = new System.Windows.Forms.HScrollBar();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.hScrollBar5 = new System.Windows.Forms.HScrollBar();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.hScrollBar6 = new System.Windows.Forms.HScrollBar();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
@@ -130,6 +152,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.scatterGraph1)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox10.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -756,7 +780,7 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(137, 67);
+            this.textBox9.Location = new System.Drawing.Point(132, 67);
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(50, 20);
@@ -764,7 +788,7 @@
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(36, 67);
+            this.textBox10.Location = new System.Drawing.Point(33, 67);
             this.textBox10.Name = "textBox10";
             this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(50, 20);
@@ -796,8 +820,6 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.groupBox2.Controls.Add(this.RotateLeft_btn);
-            this.groupBox2.Controls.Add(this.RotateRight_btn);
             this.groupBox2.Controls.Add(this.readSonar_btn);
             this.groupBox2.Controls.Add(this.textBox12);
             this.groupBox2.Controls.Add(this.mainTextBox);
@@ -809,6 +831,26 @@
             this.groupBox2.Size = new System.Drawing.Size(562, 606);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
+            // 
+            // RotateLeft_btn
+            // 
+            this.RotateLeft_btn.Location = new System.Drawing.Point(43, 215);
+            this.RotateLeft_btn.Name = "RotateLeft_btn";
+            this.RotateLeft_btn.Size = new System.Drawing.Size(91, 23);
+            this.RotateLeft_btn.TabIndex = 33;
+            this.RotateLeft_btn.Text = "Rotate Left";
+            this.RotateLeft_btn.UseVisualStyleBackColor = true;
+            this.RotateLeft_btn.Click += new System.EventHandler(this.RotateLeft_btn_Click);
+            // 
+            // RotateRight_btn
+            // 
+            this.RotateRight_btn.Location = new System.Drawing.Point(43, 232);
+            this.RotateRight_btn.Name = "RotateRight_btn";
+            this.RotateRight_btn.Size = new System.Drawing.Size(91, 23);
+            this.RotateRight_btn.TabIndex = 32;
+            this.RotateRight_btn.Text = "Rotate Right";
+            this.RotateRight_btn.UseVisualStyleBackColor = true;
+            this.RotateRight_btn.Click += new System.EventHandler(this.RotateRight_btn_Click);
             // 
             // readSonar_btn
             // 
@@ -1018,38 +1060,244 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Current Location";
             // 
-            // RotateRight_btn
+            // hScrollBar1
             // 
-            this.RotateRight_btn.Location = new System.Drawing.Point(354, 571);
-            this.RotateRight_btn.Name = "RotateRight_btn";
-            this.RotateRight_btn.Size = new System.Drawing.Size(53, 23);
-            this.RotateRight_btn.TabIndex = 32;
-            this.RotateRight_btn.Text = "R_R";
-            this.RotateRight_btn.UseVisualStyleBackColor = true;
-            this.RotateRight_btn.Click += new System.EventHandler(this.RotateRight_btn_Click);
+            this.hScrollBar1.LargeChange = 1;
+            this.hScrollBar1.Location = new System.Drawing.Point(18, 123);
+            this.hScrollBar1.Maximum = 200;
+            this.hScrollBar1.Name = "hScrollBar1";
+            this.hScrollBar1.Size = new System.Drawing.Size(135, 23);
+            this.hScrollBar1.TabIndex = 34;
+            this.hScrollBar1.Value = 100;
+            this.hScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar1_Scroll);
             // 
-            // RotateLeft_btn
+            // hScrollBar2
             // 
-            this.RotateLeft_btn.Location = new System.Drawing.Point(413, 572);
-            this.RotateLeft_btn.Name = "RotateLeft_btn";
-            this.RotateLeft_btn.Size = new System.Drawing.Size(53, 23);
-            this.RotateLeft_btn.TabIndex = 33;
-            this.RotateLeft_btn.Text = "R_L";
-            this.RotateLeft_btn.UseVisualStyleBackColor = true;
-            this.RotateLeft_btn.Click += new System.EventHandler(this.RotateLeft_btn_Click);
+            this.hScrollBar2.LargeChange = 1;
+            this.hScrollBar2.Location = new System.Drawing.Point(18, 66);
+            this.hScrollBar2.Maximum = 200;
+            this.hScrollBar2.Name = "hScrollBar2";
+            this.hScrollBar2.Size = new System.Drawing.Size(135, 23);
+            this.hScrollBar2.TabIndex = 35;
+            this.hScrollBar2.Value = 100;
+            this.hScrollBar2.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar2_Scroll);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(15, 105);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(62, 13);
+            this.label15.TabIndex = 34;
+            this.label15.Text = "Right Motor";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(13, 44);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(55, 13);
+            this.label32.TabIndex = 35;
+            this.label32.Text = "Left Motor";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(100, 43);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(50, 20);
+            this.textBox5.TabIndex = 36;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(100, 100);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(50, 20);
+            this.textBox6.TabIndex = 37;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(956, 433);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
+            this.textBox11.Size = new System.Drawing.Size(50, 20);
+            this.textBox11.TabIndex = 43;
+            // 
+            // textBoxRL
+            // 
+            this.textBoxRL.Location = new System.Drawing.Point(103, 46);
+            this.textBoxRL.Name = "textBoxRL";
+            this.textBoxRL.ReadOnly = true;
+            this.textBoxRL.Size = new System.Drawing.Size(50, 20);
+            this.textBoxRL.TabIndex = 42;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(871, 438);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(62, 13);
+            this.label33.TabIndex = 38;
+            this.label33.Text = "Right Motor";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(16, 48);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(55, 13);
+            this.label34.TabIndex = 40;
+            this.label34.Text = "Left Motor";
+            // 
+            // hScrollBar3
+            // 
+            this.hScrollBar3.LargeChange = 1;
+            this.hScrollBar3.Location = new System.Drawing.Point(874, 388);
+            this.hScrollBar3.Maximum = 200;
+            this.hScrollBar3.Name = "hScrollBar3";
+            this.hScrollBar3.Size = new System.Drawing.Size(135, 23);
+            this.hScrollBar3.TabIndex = 41;
+            this.hScrollBar3.Value = 100;
+            this.hScrollBar3.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar3_Scroll);
+            // 
+            // hScrollBar4
+            // 
+            this.hScrollBar4.LargeChange = 1;
+            this.hScrollBar4.Location = new System.Drawing.Point(874, 456);
+            this.hScrollBar4.Maximum = 200;
+            this.hScrollBar4.Name = "hScrollBar4";
+            this.hScrollBar4.Size = new System.Drawing.Size(135, 23);
+            this.hScrollBar4.TabIndex = 39;
+            this.hScrollBar4.Value = 100;
+            this.hScrollBar4.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar4_Scroll);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.textBox14);
+            this.groupBox5.Controls.Add(this.label35);
+            this.groupBox5.Controls.Add(this.label38);
+            this.groupBox5.Controls.Add(this.textBox6);
+            this.groupBox5.Controls.Add(this.hScrollBar6);
+            this.groupBox5.Controls.Add(this.textBox5);
+            this.groupBox5.Controls.Add(this.label15);
+            this.groupBox5.Controls.Add(this.label32);
+            this.groupBox5.Controls.Add(this.hScrollBar2);
+            this.groupBox5.Controls.Add(this.RotateLeft_btn);
+            this.groupBox5.Controls.Add(this.hScrollBar1);
+            this.groupBox5.Location = new System.Drawing.Point(857, 43);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(171, 246);
+            this.groupBox5.TabIndex = 44;
+            this.groupBox5.TabStop = false;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(40, 15);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(89, 17);
+            this.label35.TabIndex = 30;
+            this.label35.Text = "Rotate Left";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(40, 17);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(99, 17);
+            this.label36.TabIndex = 38;
+            this.label36.Text = "Rotate Right";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.textBox13);
+            this.groupBox10.Controls.Add(this.label36);
+            this.groupBox10.Controls.Add(this.label37);
+            this.groupBox10.Controls.Add(this.textBoxRL);
+            this.groupBox10.Controls.Add(this.hScrollBar5);
+            this.groupBox10.Controls.Add(this.label34);
+            this.groupBox10.Controls.Add(this.RotateRight_btn);
+            this.groupBox10.Location = new System.Drawing.Point(857, 319);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(171, 268);
+            this.groupBox10.TabIndex = 45;
+            this.groupBox10.TabStop = false;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(99, 175);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
+            this.textBox13.Size = new System.Drawing.Size(50, 20);
+            this.textBox13.TabIndex = 48;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(14, 180);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(34, 13);
+            this.label37.TabIndex = 46;
+            this.label37.Text = "Delay";
+            // 
+            // hScrollBar5
+            // 
+            this.hScrollBar5.Location = new System.Drawing.Point(17, 198);
+            this.hScrollBar5.Maximum = 2000;
+            this.hScrollBar5.Name = "hScrollBar5";
+            this.hScrollBar5.Size = new System.Drawing.Size(135, 23);
+            this.hScrollBar5.TabIndex = 47;
+            this.hScrollBar5.Value = 1000;
+            this.hScrollBar5.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar5_Scroll);
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(101, 156);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
+            this.textBox14.Size = new System.Drawing.Size(50, 20);
+            this.textBox14.TabIndex = 51;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(16, 161);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(34, 13);
+            this.label38.TabIndex = 49;
+            this.label38.Text = "Delay";
+            // 
+            // hScrollBar6
+            // 
+            this.hScrollBar6.Location = new System.Drawing.Point(19, 179);
+            this.hScrollBar6.Maximum = 2000;
+            this.hScrollBar6.Name = "hScrollBar6";
+            this.hScrollBar6.Size = new System.Drawing.Size(135, 23);
+            this.hScrollBar6.TabIndex = 50;
+            this.hScrollBar6.Value = 1000;
+            this.hScrollBar6.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar6_Scroll);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(843, 652);
+            this.ClientSize = new System.Drawing.Size(1040, 652);
+            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.label33);
+            this.Controls.Add(this.hScrollBar3);
+            this.Controls.Add(this.hScrollBar4);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox10);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -1082,6 +1330,10 @@
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1171,6 +1423,28 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button RotateLeft_btn;
         private System.Windows.Forms.Button RotateRight_btn;
+        private System.Windows.Forms.HScrollBar hScrollBar1;
+        private System.Windows.Forms.HScrollBar hScrollBar2;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBoxRL;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.HScrollBar hScrollBar3;
+        private System.Windows.Forms.HScrollBar hScrollBar4;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.HScrollBar hScrollBar6;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.HScrollBar hScrollBar5;
     }
 }
 

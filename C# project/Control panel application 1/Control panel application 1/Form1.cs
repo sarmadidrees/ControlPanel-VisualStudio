@@ -107,6 +107,14 @@ namespace Control_panel_application_1
             textBox8.Text = Convert.ToString(vScrollBar6.Value);
             textBox9.Text = Convert.ToString(vScrollBar7.Value);
             textBox10.Text = Convert.ToString(vScrollBar8.Value);
+
+            textBox11.Text = Convert.ToString(hScrollBar4.Value);
+            textBox5.Text = Convert.ToString(hScrollBar2.Value);
+            textBox6.Text = Convert.ToString(hScrollBar1.Value);
+            textBoxRL.Text = Convert.ToString(hScrollBar3.Value);
+
+            textBox13.Text = Convert.ToString(hScrollBar5.Value);
+            textBox14.Text = Convert.ToString(hScrollBar6.Value);
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -720,15 +728,47 @@ namespace Control_panel_application_1
         private void RotateRight_btn_Click(object sender, EventArgs e)
         {
              serialPort1.DiscardOutBuffer();
-             serialPrint("M," + "G," + "R");     //M,G,R/L   (abbv: Motor,Ghoom,Right/Left)
+             serialPrint("M," + "G," + "R," + Convert.ToString(hScrollBar3.Value) + "," + Convert.ToString(hScrollBar4.Value));     //M,G,R/L   (abbv: Motor,Ghoom,Right/Left)
         }
 
         private void RotateLeft_btn_Click(object sender, EventArgs e)
         {
             serialPort1.DiscardOutBuffer();
-            serialPrint("M," + "G," + "L");     //M,G,R/L
+            serialPrint("M," + "G," + "L," + Convert.ToString(hScrollBar2.Value) + "," + Convert.ToString(hScrollBar1.Value));     //M,G,R/L
+        }
+
+        private void hScrollBar2_Scroll(object sender, ScrollEventArgs e)
+        {
+            textBox5.Text = Convert.ToString(hScrollBar2.Value);
+        }
+        
+        private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+            textBox6.Text = Convert.ToString(hScrollBar1.Value);
+        }
+
+        private void hScrollBar3_Scroll(object sender, ScrollEventArgs e)
+        {
+            textBoxRL.Text = Convert.ToString(hScrollBar3.Value);
+        }
+
+        private void hScrollBar4_Scroll(object sender, ScrollEventArgs e)
+        {
+            textBox11.Text = Convert.ToString(hScrollBar4.Value);
+        }
+
+        private void hScrollBar5_Scroll(object sender, ScrollEventArgs e)
+        {
+            textBox13.Text = Convert.ToString(hScrollBar5.Value);
+        }
+
+        private void hScrollBar6_Scroll(object sender, ScrollEventArgs e)
+        {
+            textBox14.Text = Convert.ToString(hScrollBar6.Value);
         }
     }
 }
+
+
 
 
