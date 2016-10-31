@@ -728,13 +728,13 @@ namespace Control_panel_application_1
         private void RotateRight_btn_Click(object sender, EventArgs e)
         {
              serialPort1.DiscardOutBuffer();
-             serialPrint("M," + "G," + "R," + Convert.ToString(hScrollBar3.Value) + "," + Convert.ToString(hScrollBar4.Value));     //M,G,R/L   (abbv: Motor,Ghoom,Right/Left)
+             serialPrint("M," + "G," + "R," + Convert.ToString(hScrollBar3.Value) + "," + Convert.ToString(hScrollBar4.Value) + "," + Convert.ToString(hScrollBar5.Value));     //M,G,R/L,pwmL,pwmR,delay   (abbv: Motor,Ghoom,Right/Left)
         }
 
         private void RotateLeft_btn_Click(object sender, EventArgs e)
         {
             serialPort1.DiscardOutBuffer();
-            serialPrint("M," + "G," + "L," + Convert.ToString(hScrollBar2.Value) + "," + Convert.ToString(hScrollBar1.Value));     //M,G,R/L
+            serialPrint("M," + "G," + "L," + Convert.ToString(hScrollBar2.Value) + "," + Convert.ToString(hScrollBar1.Value) + "," + Convert.ToString(hScrollBar6.Value));     //M,G,R/L,pwmL,pwmR,delay
         }
 
         private void hScrollBar2_Scroll(object sender, ScrollEventArgs e)
