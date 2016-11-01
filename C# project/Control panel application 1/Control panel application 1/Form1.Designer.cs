@@ -134,6 +134,7 @@
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
             this.hScrollBar6 = new System.Windows.Forms.HScrollBar();
+            this.textBox15 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
@@ -610,6 +611,7 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.textBox15);
             this.groupBox8.Controls.Add(this.button14);
             this.groupBox8.Controls.Add(this.label26);
             this.groupBox8.Controls.Add(this.vScrollBar5);
@@ -652,7 +654,7 @@
             this.vScrollBar5.Name = "vScrollBar5";
             this.vScrollBar5.Size = new System.Drawing.Size(19, 125);
             this.vScrollBar5.TabIndex = 8;
-            this.vScrollBar5.Value = 20;
+            this.vScrollBar5.Value = 30;
             this.vScrollBar5.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar5_Scroll);
             // 
             // vScrollBar6
@@ -663,7 +665,7 @@
             this.vScrollBar6.Name = "vScrollBar6";
             this.vScrollBar6.Size = new System.Drawing.Size(19, 125);
             this.vScrollBar6.TabIndex = 7;
-            this.vScrollBar6.Value = 20;
+            this.vScrollBar6.Value = 30;
             this.vScrollBar6.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar6_Scroll);
             // 
             // label27
@@ -1079,7 +1081,7 @@
             this.hScrollBar2.Name = "hScrollBar2";
             this.hScrollBar2.Size = new System.Drawing.Size(135, 23);
             this.hScrollBar2.TabIndex = 35;
-            this.hScrollBar2.Value = 100;
+            this.hScrollBar2.Value = 115;
             this.hScrollBar2.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar2_Scroll);
             // 
             // label15
@@ -1158,7 +1160,7 @@
             this.hScrollBar3.Name = "hScrollBar3";
             this.hScrollBar3.Size = new System.Drawing.Size(135, 23);
             this.hScrollBar3.TabIndex = 41;
-            this.hScrollBar3.Value = 100;
+            this.hScrollBar3.Value = 115;
             this.hScrollBar3.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar3_Scroll);
             // 
             // hScrollBar4
@@ -1277,8 +1279,15 @@
             this.hScrollBar6.Name = "hScrollBar6";
             this.hScrollBar6.Size = new System.Drawing.Size(135, 23);
             this.hScrollBar6.TabIndex = 50;
-            this.hScrollBar6.Value = 1000;
+            this.hScrollBar6.Value = 900;
             this.hScrollBar6.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar6_Scroll);
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(141, 122);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(50, 20);
+            this.textBox15.TabIndex = 11;
             // 
             // Form1
             // 
@@ -1445,6 +1454,7 @@
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.HScrollBar hScrollBar5;
+        private System.Windows.Forms.TextBox textBox15;
     }
 }
 
