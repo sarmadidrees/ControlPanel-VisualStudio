@@ -474,6 +474,9 @@ namespace Control_panel_application_1
         private void path_btn_Click(object sender, EventArgs e)
         {
             scatterGraph1.ClearData();
+            serialPort1.DiscardOutBuffer();
+            if (serialPort1.IsOpen) serialPrint("PATH," + Convert.ToString(textBox1.Text) + "," + Convert.ToString(textBox2.Text) + "," + Convert.ToString(textBox4.Text) + "," + Convert.ToString(textBox3.Text));
+
             try
             {
                 //initialize nodes with all values ZERO
