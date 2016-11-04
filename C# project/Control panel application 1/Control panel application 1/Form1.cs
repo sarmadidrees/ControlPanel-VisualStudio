@@ -216,7 +216,7 @@ namespace Control_panel_application_1
         private void button14_Click(object sender, EventArgs e) //Drive through mm/s
         {
             serialPort1.DiscardOutBuffer(); //clear the TX line
-            serialPrint("M,"+"V," + Convert.ToString(vScrollBar6.Value) + "," + Convert.ToString(vScrollBar5.Value)); //D,Left Right Motor
+            serialPrint("M," + "V," + Convert.ToString(vScrollBar6.Value) + "," + Convert.ToString(vScrollBar5.Value) + "," + Convert.ToString(textBox15.Text)); //D,Left Right Motor
             if (debug)
             {
                 mainTextBox.Text = serialPort1.ReadLine();
@@ -256,7 +256,7 @@ namespace Control_panel_application_1
             }));
             int a, b, c, d;
             String s1 = "", s2 = "", s3 = "", s4 = "";
-
+            /*
             if (dataRead.StartsWith("s"))
             {
 
@@ -310,7 +310,7 @@ namespace Control_panel_application_1
                     mainTextBox.Text = dataRead;
                 }
             }
-
+            */
             /* else if (dataRead.StartsWith("r"))
              {
                  a = dataRead.IndexOf(",");

@@ -69,6 +69,7 @@
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label25 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
             this.button14 = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.vScrollBar5 = new System.Windows.Forms.VScrollBar();
@@ -90,8 +91,6 @@
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.mainTextBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.RotateLeft_btn = new System.Windows.Forms.Button();
-            this.RotateRight_btn = new System.Windows.Forms.Button();
             this.readSonar_btn = new System.Windows.Forms.Button();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.scatterGraph1 = new NationalInstruments.UI.WindowsForms.ScatterGraph();
@@ -112,6 +111,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.RotateLeft_btn = new System.Windows.Forms.Button();
+            this.RotateRight_btn = new System.Windows.Forms.Button();
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.hScrollBar2 = new System.Windows.Forms.HScrollBar();
             this.label15 = new System.Windows.Forms.Label();
@@ -125,16 +126,15 @@
             this.hScrollBar3 = new System.Windows.Forms.HScrollBar();
             this.hScrollBar4 = new System.Windows.Forms.HScrollBar();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.hScrollBar6 = new System.Windows.Forms.HScrollBar();
             this.label36 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
             this.hScrollBar5 = new System.Windows.Forms.HScrollBar();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.hScrollBar6 = new System.Windows.Forms.HScrollBar();
-            this.textBox15 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
@@ -626,6 +626,13 @@
             this.groupBox8.TabIndex = 9;
             this.groupBox8.TabStop = false;
             // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(141, 122);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(50, 20);
+            this.textBox15.TabIndex = 11;
+            // 
             // button14
             // 
             this.button14.Location = new System.Drawing.Point(131, 157);
@@ -833,26 +840,6 @@
             this.groupBox2.Size = new System.Drawing.Size(562, 606);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
-            // 
-            // RotateLeft_btn
-            // 
-            this.RotateLeft_btn.Location = new System.Drawing.Point(43, 215);
-            this.RotateLeft_btn.Name = "RotateLeft_btn";
-            this.RotateLeft_btn.Size = new System.Drawing.Size(91, 23);
-            this.RotateLeft_btn.TabIndex = 33;
-            this.RotateLeft_btn.Text = "Rotate Left";
-            this.RotateLeft_btn.UseVisualStyleBackColor = true;
-            this.RotateLeft_btn.Click += new System.EventHandler(this.RotateLeft_btn_Click);
-            // 
-            // RotateRight_btn
-            // 
-            this.RotateRight_btn.Location = new System.Drawing.Point(43, 232);
-            this.RotateRight_btn.Name = "RotateRight_btn";
-            this.RotateRight_btn.Size = new System.Drawing.Size(91, 23);
-            this.RotateRight_btn.TabIndex = 32;
-            this.RotateRight_btn.Text = "Rotate Right";
-            this.RotateRight_btn.UseVisualStyleBackColor = true;
-            this.RotateRight_btn.Click += new System.EventHandler(this.RotateRight_btn_Click);
             // 
             // readSonar_btn
             // 
@@ -1062,6 +1049,26 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Current Location";
             // 
+            // RotateLeft_btn
+            // 
+            this.RotateLeft_btn.Location = new System.Drawing.Point(43, 215);
+            this.RotateLeft_btn.Name = "RotateLeft_btn";
+            this.RotateLeft_btn.Size = new System.Drawing.Size(91, 23);
+            this.RotateLeft_btn.TabIndex = 33;
+            this.RotateLeft_btn.Text = "Rotate Left";
+            this.RotateLeft_btn.UseVisualStyleBackColor = true;
+            this.RotateLeft_btn.Click += new System.EventHandler(this.RotateLeft_btn_Click);
+            // 
+            // RotateRight_btn
+            // 
+            this.RotateRight_btn.Location = new System.Drawing.Point(43, 232);
+            this.RotateRight_btn.Name = "RotateRight_btn";
+            this.RotateRight_btn.Size = new System.Drawing.Size(91, 23);
+            this.RotateRight_btn.TabIndex = 32;
+            this.RotateRight_btn.Text = "Rotate Right";
+            this.RotateRight_btn.UseVisualStyleBackColor = true;
+            this.RotateRight_btn.Click += new System.EventHandler(this.RotateRight_btn_Click);
+            // 
             // hScrollBar1
             // 
             this.hScrollBar1.LargeChange = 1;
@@ -1193,6 +1200,14 @@
             this.groupBox5.TabIndex = 44;
             this.groupBox5.TabStop = false;
             // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(101, 156);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
+            this.textBox14.Size = new System.Drawing.Size(50, 20);
+            this.textBox14.TabIndex = 51;
+            // 
             // label35
             // 
             this.label35.AutoSize = true;
@@ -1202,6 +1217,25 @@
             this.label35.Size = new System.Drawing.Size(89, 17);
             this.label35.TabIndex = 30;
             this.label35.Text = "Rotate Left";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(16, 161);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(34, 13);
+            this.label38.TabIndex = 49;
+            this.label38.Text = "Delay";
+            // 
+            // hScrollBar6
+            // 
+            this.hScrollBar6.Location = new System.Drawing.Point(19, 179);
+            this.hScrollBar6.Maximum = 2000;
+            this.hScrollBar6.Name = "hScrollBar6";
+            this.hScrollBar6.Size = new System.Drawing.Size(135, 23);
+            this.hScrollBar6.TabIndex = 50;
+            this.hScrollBar6.Value = 900;
+            this.hScrollBar6.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar6_Scroll);
             // 
             // label36
             // 
@@ -1254,40 +1288,6 @@
             this.hScrollBar5.TabIndex = 47;
             this.hScrollBar5.Value = 1000;
             this.hScrollBar5.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar5_Scroll);
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(101, 156);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(50, 20);
-            this.textBox14.TabIndex = 51;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(16, 161);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(34, 13);
-            this.label38.TabIndex = 49;
-            this.label38.Text = "Delay";
-            // 
-            // hScrollBar6
-            // 
-            this.hScrollBar6.Location = new System.Drawing.Point(19, 179);
-            this.hScrollBar6.Maximum = 2000;
-            this.hScrollBar6.Name = "hScrollBar6";
-            this.hScrollBar6.Size = new System.Drawing.Size(135, 23);
-            this.hScrollBar6.TabIndex = 50;
-            this.hScrollBar6.Value = 900;
-            this.hScrollBar6.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar6_Scroll);
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(141, 122);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(50, 20);
-            this.textBox15.TabIndex = 11;
             // 
             // Form1
             // 
